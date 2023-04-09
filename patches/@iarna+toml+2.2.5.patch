@@ -1,0 +1,13 @@
+diff --git a/node_modules/@iarna/toml/parse-stream.js b/node_modules/@iarna/toml/parse-stream.js
+index fb9a644..9b18db1 100755
+--- a/node_modules/@iarna/toml/parse-stream.js
++++ b/node_modules/@iarna/toml/parse-stream.js
+@@ -1,7 +1,7 @@
+ 'use strict'
+ module.exports = parseStream
+ 
+-const stream = require('stream')
++import * as stream from 'stream'
+ const TOMLParser = require('./lib/toml-parser.js')
+ 
+ function parseStream (stm) {
