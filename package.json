@@ -1,6 +1,6 @@
 {
 	"name": "yml-to-toml",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "Convert a YAML file to a TOML file.",
 	"author": "BlobDevelopment",
 	"main": "dist/index.js",
@@ -8,12 +8,12 @@
 	"type": "module",
 	"keywords": ["yaml", "yml", "toml", "convert", "converter"],
 	"scripts": {
-		"postinstall": "patch-package",
 		"build": "esbuild --bundle --format=esm --platform=node --outfile=dist/index.js index.ts",
-		"dev": "npm run build && node dist/index.js"
+		"dev": "npm run build && node dist/index.js",
+		"publish": "npm run build && npm publish"
 	},
 	"bin": {
-		"toml-to-yml": "dist/index.js"
+		"yml-to-toml": "dist/index.js"
 	},
 	"files": [
 		"package.json",

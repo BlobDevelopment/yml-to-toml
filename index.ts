@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as fs from 'fs/promises';
 import { argv, exit } from 'process';
 import yaml from 'yaml';
